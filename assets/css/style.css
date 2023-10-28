@@ -1,3 +1,20 @@
 body {
     background-color: grey;
 }
+
+#theme-toggle {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#theme-toggle-img {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    cursor: pointer;
+}
