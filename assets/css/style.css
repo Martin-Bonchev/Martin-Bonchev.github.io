@@ -1,29 +1,58 @@
 body {
-    background-color: grey;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #theme-toggle-box {
     display: flex;
     align-items: center;
-    width: 100px;
-    height: 40px;
-    border: 1px solid black;
-    border-radius: 35px;
+    width: 6.25rem;
+    height: 2.5rem;
+    border: 0.07rem solid black;
+    border-radius: 1.5rem;
 }
 
 #theme-toggle-img {
-    width: 30px; 
-    height: 30px; /* Equal to width*/
-    padding: 5px; /* {theme-toggle-box height} - {theme-toggle-img width} */
-    border: 1px solid black;
-    margin-left: -1px; /* Compensates border's thickness */
-    border-radius: 35px;
+    width: 2.4rem; /* Same as height */
+    height: 2.4rem; /* {theme-toggle-box height} - 2*{theme-toggle-img padding} */
+    padding: 0.05rem;
+    /* border: 0.05rem solid black; */
+    border-radius: 1.5rem;
     vertical-align: middle;
-    cursor: pointer;
     transition: all .8s;
-    
+}
+
+/* Utilities */
+body.bg-light-theme {
+    background-image: url("../images/bg_light.png");
+}
+
+body.bg-dark-theme {
+    background-image: url("../images/bg_dark.png");
 }
 
 #theme-toggle-img.item-self-right {
-    margin-left: 59px; /* {theme-toggle-box width} - {theme-toggle-img width} - (2 * {theme-toggle-img padding} - {theme-toggle-img border}) */
+    margin-left: 3.75rem; /* {theme-toggle-box width} - {theme-toggle-img width} - (2 * {theme-toggle-img padding} - {theme-toggle-img border}) */
 }
+
+#theme-toggle-img.item-self-left {
+    margin-left: 0rem; /* Compensates {theme-toggle-img} border's thickness */
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.bg-light-blue {
+    background-color: #668cff;
+}
+
+.bg-dark-blue {
+    background-color: #001247;
+}
+/* Utilities */
