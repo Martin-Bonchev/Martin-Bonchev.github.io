@@ -25,11 +25,11 @@ body {
 
 /* Utilities */
 body.bg-light-theme {
-    background-image: url("../images/bg_light.png");
+    background-image: url("../images/bg_light.jpg");
 }
 
 body.bg-dark-theme {
-    background-image: url("../images/bg_dark.png");
+    background-image: url("../images/bg_dark.jpg");
 }
 
 #theme-toggle-img.item-self-right {
