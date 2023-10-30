@@ -1,9 +1,11 @@
 "use strict"
 
-var themeToggleBtn = document.getElementById("theme-toggle-img");
-themeToggleBtn.addEventListener("click", toggleTheme);
+function addToggleThemeListener() {
+    document.getElementById("theme-toggle-img").addEventListener("click", toggleTheme);
+}
 
 function toggleTheme() {
+    var themeToggleBtn = document.getElementById("theme-toggle-img")
     var img_src = document.getElementById("theme-toggle-img").src;
     var img_filename = img_src.substring(img_src.lastIndexOf('/') + 1);
     
