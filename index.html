@@ -11,27 +11,37 @@
     
 </head>
 <body class="bg-light-theme">
-    <div id="navbar" class="navbar flexbox align-items-center">
+    <div id="navbar" class="navbar dark-cyan flexbox align-items-center">
         <script>addFile('navbar', 'navbar.html')</script> <!-- Top navigation bar -->
     </div>
 
     <h1>This is a test GitHub portfolio</h1>
 
-    <form onsubmit="sendMail()">
+    <form class="blur-bg" id="email-form" onsubmit="sendMail()">
         <label for="name">Name</label>
-        <input type="text" id="emailName" name="name" required>
+        <br>
+        <input type="text" class="" id="emailName" name="name" required>
         <br><br>
-        <label for="emailCC">Email</label> 
-        <input type="email" id="emailCC" name="email" required>
+    
+        <label for="emailCC">Email</label>
+        <br>
+        <input type="email" class="w-100" id="emailCC" name="email" required>
         <br><br>
+    
         <label for="emailSubject">Subject</label> 
-        <input type="text" id="emailSubject" name="subject" required>
+        <br>
+        <input type="text" class="w-100" id="emailSubject" name="subject" required>
         <br><br>
+
         <label for="emailMessage">Message</label> 
-        <textarea id="emailMessage" name="message" required></textarea>
+        <br>
+        <textarea id="emailMessage" class="w-100" name="message" required></textarea>
         <br><br>
-        <input type="submit" value="Submit"> 
-        <input type="reset" value="Reset">
+        
+        <div class="flexbox" style="height: 1.8em;">
+            <input type="submit" class="btn btn-dark" value="Submit"> 
+            <input type="reset" class="btn btn-dark ml-auto" value="Reset">
+        </div>
     </form>
     
     <script src="assets/js/test.js"></script>

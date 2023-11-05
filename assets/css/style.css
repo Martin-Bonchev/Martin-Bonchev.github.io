@@ -11,15 +11,122 @@ body {
     margin: 0;
 }
 
+/* BUTTONS */
+.btn {
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.35em;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.3em;
+    transition: 0.3s;
+}
+
+/* Solid buttons */
+.btn-dark {
+    border-color: #303030;
+    background-color: #303030;
+}
+.btn-dark:hover {
+    border-color: #000000;
+    background-color: #000000;
+}
+
+.btn-blue {
+    border-color: #0a74ff;
+    background-color: #0a74ff;
+}
+.btn-blue:hover {
+    border-color: #005acf;
+    background-color: #005acf;
+}
+
+.btn-green {
+    border-color: #078d07;
+    background-color: #078d07;
+}
+.btn-green:hover {
+    border-color: #066b06;
+    background-color: #066b06;
+}
+/* Solid buttons */
+
+/* Outline buttons */
+.btn-outline-dark {
+    border-color: #303030;
+    color: #303030;
+}
+.btn-outline-dark:hover {
+    background-color: #303030;
+    color: #ffffff;
+}
+
+.btn-outline-blue {
+    border-color: #0a74ff;
+    color: #0a74ff;
+}
+.btn-outline-blue:hover {
+    background-color: #0a74ff;
+    color: #ffffff;
+}
+
+.btn-outline-green {
+    border-color: #078d07;
+    color: #078d07;
+}
+.btn-outline-green:hover {
+    background-color: #078d07;
+    color: #ffffff;
+}
+/* Outline buttons */
+/* BUTTONS */
+
 .navbar {
     font-size: 16px; /* !!!!!!!!!! */
     position: fixed;
     width: 100%;
     height: 3em;
+    right: 0;
     left: 0;
     top: 0;
-    background-color: #2B525A;
+    padding-right: 100px; /* ????????????????????????????????????????????????????????????????????????????????????????????????????????????? */
 }
+
+/* EMAIL FORM */
+#email-form {
+    font-size: 20px;
+    width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
+    padding: 1em 5%;
+    border: solid black 1px;
+    border-radius: 1em;
+}
+
+#email-form input, textarea {
+    border-radius: 0.3em;
+    border: solid black 1px;
+}
+
+#email-form > input, textarea {
+    width: 100%;
+}
+
+#email-form > input {
+    height: 2.5em;
+}
+
+#email-form > textarea {
+    height: 4em;
+}
+
+#email-form .btn {
+    width: 45%
+}
+
+/* EMAIL FORM */
 
 #theme-toggle-box {
     width: 6.25em;
@@ -71,8 +178,20 @@ body {
     margin-right: auto;
 }
 
+.w-100 {
+    width: 100%;
+}
+
+.w-33 {
+    width: 33%;
+}
+
 .flexbox {
     display: flex;
+}
+
+.text-align-start {
+    text-align: start;
 }
 
 .align-items-center {
@@ -91,6 +210,10 @@ body {
     cursor: pointer;
 }
 
+.dark-cyan {
+    background-color: #2B525A;
+}
+
 .bg-white {
     background-color: #FFFFFF;
 }
@@ -107,6 +230,10 @@ body {
 }
 .bg-dark-blue {
     background-color: #001247;
+}
+
+.blur-bg {
+    backdrop-filter: blur(5px);
 }
 
 body.bg-light-theme {
