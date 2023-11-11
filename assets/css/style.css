@@ -11,6 +11,20 @@ body {
     margin: 0;
 }
 
+input, textarea {
+    background-color: rgba(34, 34, 34, 0.612);
+    border-radius: 0.3em;
+    border: solid black 1px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus {
+    outline: 1.5px solid #000000;
+}
+
 /* BUTTONS */
 .btn {
     cursor: pointer;
@@ -103,11 +117,7 @@ body {
     padding: 1em 5%;
     border: solid black 1px;
     border-radius: 1em;
-}
-
-#email-form input, textarea {
-    border-radius: 0.3em;
-    border: solid black 1px;
+    box-shadow: rgba(31, 31, 31, 0.822)0 0 10px 3px;
 }
 
 #email-form > input, textarea {
